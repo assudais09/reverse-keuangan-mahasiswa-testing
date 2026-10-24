@@ -1,0 +1,17 @@
+<html><head><title>Dompet Mahasiswa</title>
+<style>body{font-family:system-ui;margin:30px;max-width:900px} .angka{font-size:22px;font-weight:bold} .kotak{display:inline-block;padding:12px 18px;margin:6px;border-radius:8px;background:#eef}
+.aman{color:green}.waspada{color:#c80}.melebihi{color:#c00} table{border-collapse:collapse} td,th{padding:5px 10px;border-bottom:1px solid #ddd}</style></head>
+<body><h1>Dompet Mahasiswa — {{ bulan }}</h1>
+<form>Bulan <input type="month" name="bulan" value="{{ bulan }}"><button>Lihat</button> · <a href="/export.csv?bulan={{ bulan }}">Unduh CSV</a></form>
+<div class="kotak">Pemasukan<div class="angka">{{ pemasukan }}</div></div><div class="kotak">Pengeluaran<div class="angka">{{ pengeluaran }}</div></div>
+<div class="kotak">Selisih<div class="angka">{{ selisih }}</div></div><div class="kotak">Rasio tabungan<div class="angka">{{ rasio }}%</div></div>
+<p><i>{{ nasihat }}</i></p>
+<h3>Anggaran</h3><table><tr><th>Kategori</th><th>Terpakai</th><th>Anggaran</th><th>%</th><th>Status</th></tr>
+{% for a in anggaran %}<tr><td>{{ a.kategori }}</td><td>{{ a.terpakai }}</td><td>{{ a.anggaran }}</td><td>{{ a.persen }}</td><td class="{{ a.status }}">{{ a.status }}</td></tr>{% endfor %}</table>
+<h3>Transaksi</h3><table>{% for t in transaksi %}<tr><td>{{ t.tanggal }}</td><td>{{ t.kategori }}</td><td>{{ t.catatan }}</td><td style="text-align:right">{{ t.tampil }}</td></tr>{% endfor %}</table>
+<h3>Catat transaksi</h3><p style="color:#c00">{{ pesan }}</p>
+<form method="post" action="/tambah">
+<input type="date" name="tanggal" required> <select name="jenis"><option>pengeluaran</option><option>pemasukan</option></select>
+<select name="kategori">{% for k in kategori %}<option>{{ k.nama }}</option>{% endfor %}</select>
+<input type="number" name="jumlah" placeholder="jumlah"> <input name="catatan" placeholder="catatan"> <button>Simpan</button></form>
+</body></html>
