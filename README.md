@@ -64,8 +64,39 @@ Semua aturan ini saat ini tertulis **langsung di dalam fungsi route** (sebagian 
 ## File
 
 | File | Isi |
+
+
+
 |------|-----|
 | `app.py` | Seluruh aplikasi (monolitik) |
 | `data.json` | Data contoh (berubah setiap ada transaksi) |
 | `Dockerfile`, `requirements.txt` | Image Python 3.12 + Flask |
 | `docker-compose.yml` | Menjalankan aplikasi ini di port 5004; folder di-mount ke container sehingga perubahan kode langsung terbaca |
+
+
+
+## Dokumentasi Pengujian
+
+### 1. Unit Testing
+![Unit Testing PASS](flowchart1.jfif)
+
+### 2. Repository Testing
+![Repository Testing PASS](flowchart2.jfif)
+
+### 3. Integration Testing
+![Integration Testing PASS](flowchart3.jfif)
+
+### 4. Simulasi Unit Testing FAIL
+![Unit Testing FAIL](flowchart4.jfif)
+
+
+![test_integrasi](test_integrasi.png)
+
+
+![test_layanan](test_layanan.png)
+
+
+![test_repositori](test_repositori.png)
+
+
+
