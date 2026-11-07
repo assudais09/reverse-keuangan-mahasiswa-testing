@@ -75,24 +75,31 @@ Semua aturan ini saat ini tertulis **langsung di dalam fungsi route** (sebagian 
 
 
 
-
+<img src="screenshots/unit-testing-pass.png" width="600">
 
 
 # Dokumentasi Pengujian
 
 ## 1. Unit Testing
-![Unit Testing PASS](./flowchart1.jfif)
-![Unit Testing PASS](./test_layanan.png)
+<img src="screenshots/flowchart1.jfif" width="500">
+
+## screenshot hasil test layanan
+<img src="screenshots/test_layanan.png" width="500">
+
 ## 2. Repository Testing
-![Repository Testing PASS](./flowchart2.jfif)
-![Unit Testing PASS](./test_repositori.png)
+<img src="screenshots/flowchart2.jfif" width="500">
+
+## screenshot hasil test repositori
+<img src="screenshots/test_repositori.png" width="500">
 
 ## 3. Integration Testing
-![Integration Testing PASS](./flowchart3.jfif)
-![Unit Testing PASS](./test_integrasi.png)
+<img src="screenshots/flowchart3.jfif" width="500">
+
+## screenshot hasil test integrasi
+<img src="screenshots/test_integrasi.png" width="500">
 
 ## 4. Simulasi Unit Testing FAIL
-![Unit Testing FAIL](./flowchart4.jfif)
+<img src="screenshots/flowchart4.jfif" width="500">
 
 
 
