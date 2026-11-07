@@ -75,25 +75,7 @@ Semua aturan ini saat ini tertulis **langsung di dalam fungsi route** (sebagian 
 
 
 
-## Dokumentasi Pengujian
 
-### 1. Unit Testing
-![Unit Testing PASS](flowchart1.jfif)
-
-### 2. Repository Testing
-![Repository Testing PASS](flowchart2.jfif)
-
-### 3. Integration Testing
-![Integration Testing PASS](flowchart3.jfif)
-
-### 4. Simulasi Unit Testing FAIL
-![Unit Testing FAIL](flowchart4.jfif)
-
-
-![test_integrasi](test_integrasi.png)
-
-
-![test_layanan](test_layanan.png)
 
 
 ![test_repositori](test_repositori.png)
